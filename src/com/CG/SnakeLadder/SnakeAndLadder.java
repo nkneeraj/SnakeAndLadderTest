@@ -19,16 +19,17 @@ public class SnakeAndLadder {
 			int action_taken = (int)Math.floor(Math.random()*10)%3;
 			counter1++;
 			if(action_taken == no_play)
-				System.out.println("no play for player1");
+				{}
 			else if(action_taken == ladder_value)
 			{
 				while(action_taken==ladder_value)
 				{
+					dice_value = (int)Math.floor(Math.random()*10)%6;
+					action_taken = (int)Math.floor(Math.random()*10)%3;
 					p1_position+=dice_value;
 					if(p1_position > 100)
 						p1_position-=dice_value;
-					dice_value = (int)Math.floor(Math.random()*10)%6;
-					action_taken = (int)Math.floor(Math.random()*10)%3;
+					
 					counter1++;
 				}
 			}
@@ -47,15 +48,16 @@ public class SnakeAndLadder {
 				action_taken = (int)Math.floor(Math.random()*10)%3;
 				counter2++;
 				if(action_taken == no_play)
-					System.out.println("no play for player2");
+				{}
 				else if(action_taken == ladder_value)
 				{	while(action_taken==ladder_value)
 				{
+					dice_value = (int)Math.floor(Math.random()*10)%6;
+					action_taken = (int)Math.floor(Math.random()*10)%3;
 					p2_position+=dice_value;
 					if(p2_position > 100)
 						p2_position-=dice_value;
-					dice_value = (int)Math.floor(Math.random()*10)%6;
-					action_taken = (int)Math.floor(Math.random()*10)%3;
+					
 					counter2++;
 				}
 				}
@@ -66,8 +68,9 @@ public class SnakeAndLadder {
 						p2_position=0;
 				}
 			}
-			System.out.println("Counter1:" + counter1 + "Player1 Position:"+ p1_position + "\n" + "Counter2:"+ counter2 +"player2 Position:"+ p2_position + "\n" );
 		}
+		System.out.println("Counter1:" + counter1 + "Player1 Position:"+ p1_position + "\n" + "Counter2:"+ counter2 +"player2 Position:"+ p2_position + "\n" );
+
 		if(p1_position==100)
 			System.out.println("Player 1 is winner");
 		else
