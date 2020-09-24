@@ -1,7 +1,6 @@
 package com.CG.SnakeLadder;
 
-public class SnakeAndLadder {
-	
+public class SnakeAndLadder {	
 	public static final int no_play =0;
 	public static final int ladder_value =1;
 	public static final int snake_value =2;
@@ -76,3 +75,5 @@ public class SnakeAndLadder {
 
 	}
 }
+
+

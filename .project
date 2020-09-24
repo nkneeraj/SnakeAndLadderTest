@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>SnakeAndLadderTest</name>
+=======
+	<name>SnakeAndLadder</name>
+>>>>>>> c98ead25a69598e1f068c23018eb6875ba30283d
 	<comment></comment>
 	<projects>
 	</projects>
