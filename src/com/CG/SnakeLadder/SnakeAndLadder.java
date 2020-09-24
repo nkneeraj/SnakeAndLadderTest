@@ -8,15 +8,15 @@ public class SnakeAndLadder {
 		
 
 		int current_position = start_position;
-
-
 		int no_play = 0;
 		int ladder_value = 1;
 		int snake_value = 2;
+		int counter = 0;
 
 		while(current_position<100)
 		{	int dice_value = (int)Math.floor(Math.random()*10)%6;
 			int action_taken = (int)Math.floor(Math.random()*10)%3;
+			counter++;
 			if(action_taken == no_play)
 				continue;
 			else if(action_taken == ladder_value)
@@ -30,6 +30,10 @@ public class SnakeAndLadder {
 				current_position-=dice_value;
 				if(current_position<0)
 					current_position=0;
-			}	
+			}
+			
+			System.out.println("Counter:" +counter+ System.lineSeparator()+ "Current Position:"+ current_position + System.lineSeparator());
+		}
+			
 	}
 }
