@@ -7,3 +7,4 @@ public class SnakeAndLadder {
 		int no_of_players = 1;		
 
 }
+}
